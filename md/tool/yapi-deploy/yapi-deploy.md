@@ -1,6 +1,6 @@
 # YApi部署
 
->YApi 是一款高效、易用、功能强大的 api 管理软件，旨在为开发、产品、测试人员提供更优雅的接口管理服务。可以帮助开发者轻松创建、发布、维护 API。本文将来介绍YApi的详细部署流程，部署测试均在外网环境进行，内网部署要点在最后进行补充。
+>YApi 是一款高效、易用、功能强大的 api 管理软件，旨在为开发、产品、测试人员提供更优雅的接口管理服务。可以帮助开发者轻松创建、发布、维护 API。本文将简要介绍YApi的部署流程。
 
 
 
@@ -16,7 +16,7 @@
 
 访问nodejs官网，下载最新安装包。注意nodejs版本需7.6+。
 
-下载地址：https://www.mongodb.com/try/download
+[下载地址]: https://nodejs.org/en/download/
 
 ![image-20200808160253517](./img/image001.png)
 
@@ -50,7 +50,7 @@ ln -s /usr/local/nodejs/bin/npm /usr/local/bin/npm
 
 访问mongodb官网，下载最新安装包。注意mongodb版本需2.6+。
 
-下载地址：https://www.mongodb.com/try/download
+[下载地址]: https://www.mongodb.com/try/download	"xxxx"
 
 ![image-20200808151250206](./img/image003.png)
 
@@ -108,7 +108,7 @@ mongod -f /usr/local/mongodb/conf/mongodb.conf –-shutdown
 
 或在客户端中关闭mongod服务。
 
-```sql
+```mongodb
 > use admin
 > db.auth("account","password")
 > db.shutdownServer()
@@ -128,7 +128,7 @@ mongo
 
 查看数据库。
 
-```sql
+```mongodb
 > show dbs
 ```
 
@@ -140,7 +140,7 @@ mongo
 
 在admin库创建一个超级用户，角色为userAdminAnyDatabase。
 
-```sql
+```mongodb
 > use admin
 > db.createUser({user: "admin", pwd: "123456", roles: [{ role: "userAdminAnyDatabase", db: "admin"}]})
 ```
@@ -151,7 +151,7 @@ mongo
 
 建立yapi库，作为后续YApi使用的数据库，同时也为它也建立一个管理员。
 
-```sql
+```mongodb
 > use yapi
 > db.createUser({user: "yapi", pwd: "yapi", roles: [{role: "dbOwner", db: "yapi"}]})
 ```
@@ -164,7 +164,7 @@ mongo
 
 现在则能验证是否能通过权限认证而看到相关表信息。
 
-```sql
+```mongodb
 > use admin
 > db.auth("admin", "123456")
 > show dbs
@@ -180,9 +180,9 @@ mongo
 
 相关地址如下，官方部署文档中的命令行部署方式执行YApi部署。
 
-官方部署文档：https://hellosean1025.github.io/yapi/devops/index.html  
-github地址：https://github.com/YMFE/yapi  
-gitee地址：https://gitee.com/mirrors/YApi
+[官方部署文档]: https://hellosean1025.github.io/yapi/devops/index.html
+[github地址]: https://github.com/YMFE/yapi
+[gitee地址]: https://gitee.com/mirrors/YApi
 
 
 
@@ -256,7 +256,7 @@ npm run install-server
 
 
 
-## YApi后台运行
+## 后台运行
 
 之前YApi服务均在前台运行，且切断终端连接服务也随之停止。这里可采用pm2对node的应用进行管理，同时也可用nohup + &命令解决这个问题。这里采用nohup。
 
@@ -291,11 +291,6 @@ YApi仍正常访问，部署完成。
 ![image-20200808155621166](./img/image021.png)
 
 
-
-## 内网部署注意事项
-
-- nodejs以及mongodb按照上述部署流程操作即可，当然，软件的安装目录可根据情况来改变，上文中软件均安装在/usr/local目录下。
-- YApi安装由于公司内网代理proxy限制以及服务器DNS无法配置，导致使用npm命令下载node应用或者相关依赖基本报错，或者卡死。**则可以将已下载完成的YApi项目，以及生产依赖，打包上传至服务器**。再修改config.json，在vendors目录下执行部署`npm run install-server`即可。
 
 
 
