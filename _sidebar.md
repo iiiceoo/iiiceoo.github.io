@@ -1,14 +1,14 @@
 - Linux
    - [:(](/linux/)
 - Redis
-   - [redis keepalived HA](/md/redis/redis-keepalived-ha/redis-keepalived-ha)
-   - [redis 主从双中心容灾](/md/redis/redis-ms-dr/redis-ms-dr)
-   - [redis cluster双中心容灾](/md/redis/redis-cluster-dr/redis-cluster-dr)
-   - [redis web-cli](/md/redis/redis-web-cli/redis-web-cli)
-   - [redis 实例自动发现](/md/redis/redis-discover/redis-discover)
-   - [jedis 3.2哨兵密码](/md/redis/jedis-sentinel-passwd/jedis-sentinel-passwd)
-   - [jedis cluster节点数量配置](/md/redis/jedis-cluster-nodes/jedis-cluster-nodes)
+   - [Redis Keepalived HA](/md/redis/redis-keepalived-ha/redis-keepalived-ha)
+   - [Redis 主从双中心容灾](/md/redis/redis-ms-dr/redis-ms-dr)
+   - [Redis cluster双中心容灾](/md/redis/redis-cluster-dr/redis-cluster-dr)
+   - [Redis web-cli](/md/redis/redis-web-cli/redis-web-cli)
+   - [Redis 实例自动发现](/md/redis/redis-discover/redis-discover)
+   - [Jedis 3.2哨兵密码](/md/redis/jedis-sentinel-passwd/jedis-sentinel-passwd)
+   - [Jedis cluster节点数量配置](/md/redis/jedis-cluster-nodes/jedis-cluster-nodes)
 - Zookeeper
-   - [zookeeper 集群双中心容灾](/md/zookeeper/zookeeper-cluster-dr/zookeeper-cluster-dr)
+   - [Zookeeper 集群双中心容灾](/md/zookeeper/zookeeper-cluster-dr/zookeeper-cluster-dr)
 - Tool
    - [YApi部署](/md/tool/yapi-deploy/yapi-deploy)

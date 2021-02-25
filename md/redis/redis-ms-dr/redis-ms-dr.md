@@ -195,7 +195,7 @@ SLAVEOF NO ONE
 
 >**说明**
 >
->1. [redis keepalived HA]: http://iiiceoo.github.io/#/md/redis/redis-keepalived-ha/redis-keepalived-ha
+>1. [Redis Keepalived HA](http://iiiceoo.github.io/#/md/redis/redis-keepalived-ha/redis-keepalived-ha)
 >2. Redis集群整体为一主两从，A机房分布一主一从，B机房放置一从。主要目标为，**在A机房健康时，极大可能的使用A机房的Redis实例对外提供服务**；当A机房完全宕机时，切换至B机房提供服务。
 >3. A机房主从间搭建Keepalived，对外开放一个统一的`VIP`，**VIP总指向A机房主节点的地址**。
 >4. B机房的**从节点**`slaveof VIP`，即在A机房健康的情况下，**它总对当前的主节点进行备份**。

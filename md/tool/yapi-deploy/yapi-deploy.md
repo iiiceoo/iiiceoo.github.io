@@ -14,9 +14,7 @@
 
 ## Nodejs安装
 
-访问nodejs官网，下载最新安装包。注意nodejs版本需7.6+。
-
-[下载地址]: https://nodejs.org/en/download/
+访问nodejs官网，[下载最新安装包](https://nodejs.org/en/download/)。注意nodejs版本需7.6+。
 
 ![image-20200808160253517](./img/image001.png)
 
@@ -48,9 +46,7 @@ ln -s /usr/local/nodejs/bin/npm /usr/local/bin/npm
 
 ## Mongodb安装
 
-访问mongodb官网，下载最新安装包。注意mongodb版本需2.6+。
-
-[下载地址]: https://www.mongodb.com/try/download	"xxxx"
+访问mongodb官网，[下载最新安装包](https://www.mongodb.com/try/download)。注意mongodb版本需2.6+。
 
 ![image-20200808151250206](./img/image003.png)
 
