@@ -15,8 +15,9 @@
    - [Kubernetes API](/md/kubernetes/k8s-api/k8s-api)
    - [单机容器网络](/md/kubernetes/container-network/container-network)
    - [容器跨主网络](/md/kubernetes/flannel/flannel)
-   - [三层网络方案](/md/kubernetes/x)
-   - [NetworkPolicy](/md/kubernetes/x)
+   - [CNI](/md/kubernetes/cni/cni)
+   - [三层网络方案](/md/kubernetes/calico/calico)
+   - [NetworkPolicy](/md/kubernetes/network-policy/network-policy)
    - [Service 与 Ingress](/md/kubernetes/service-ingress/service-ingress)
 - Tool
    - [YApi部署](/md/tool/yapi-deploy/yapi-deploy)

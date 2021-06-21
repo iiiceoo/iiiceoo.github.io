@@ -274,23 +274,23 @@ kubectl logs test-downwardapi-volume
 
 ```
 1. 使用 fieldRef 可以声明使用:
-spec.nodeName							宿主机名字
-status.hostIP							宿主机 IP
-metadata.name							Pod 的名字
-metadata.namespace						Pod 的 Namespace
+spec.nodeName                           宿主机名字
+status.hostIP                           宿主机 IP
+metadata.name                           Pod 的名字
+metadata.namespace                      Pod 的 Namespace
 status.podIP - Pod 的 IP
-spec.serviceAccountName					Pod 的 Service Account 名字
+spec.serviceAccountName                 Pod 的 Service Account 名字
 metadata.uid - Pod 的 UID
-metadata.labels['<KEY>']				指定 <KEY> 的 Label 值
-metadata.annotations['<KEY>']			指定 <KEY> 的 Annotation 值
-metadata.labels							Pod 的所有 Label
-metadata.annotations					Pod 的所有 Annotation
+metadata.labels['<KEY>']                指定 <KEY> 的 Label 值
+metadata.annotations['<KEY>']           指定 <KEY> 的 Annotation 值
+metadata.labels                         Pod 的所有 Label
+metadata.annotations                    Pod 的所有 Annotation
 
 2. 使用 resourceFieldRef 可以声明使用:
-limit.cpu								容器的 CPU limit
-requests.cpu							容器的 CPU request
-limits.memory							容器的 memory limit
-requests.memory							容器的 memory request
+limit.cpu                               容器的 CPU limit
+requests.cpu                            容器的 CPU request
+limits.memory                           容器的 memory limit
+requests.memory                         容器的 memory request
 ```
 
 
