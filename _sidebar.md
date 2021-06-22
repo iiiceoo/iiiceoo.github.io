@@ -9,7 +9,7 @@
    - [Jedis 3.2 哨兵密码 BUG](/md/redis/sentinel-passwd-bug/sentinel-passwd-bug)
    - [Jedis Cluster 节点数量配置](/md/redis/cluster-nodes-cfg/cluster-nodes-cfg)
 - Kubernetes
-   - [控制器](/md/kubernetes/controller/controller)
+   - [控制器模式](/md/kubernetes/controller/controller)
    - [数据卷](/md/kubernetes/volume/volume)
    - [RBAC](/md/kubernetes/rbac/rbac)
    - [Kubernetes API](/md/kubernetes/k8s-api/k8s-api)
@@ -17,7 +17,7 @@
    - [容器跨主网络](/md/kubernetes/flannel/flannel)
    - [CNI](/md/kubernetes/cni/cni)
    - [三层网络方案](/md/kubernetes/calico/calico)
-   - [NetworkPolicy](/md/kubernetes/network-policy/network-policy)
+   - [网络策略（Network Policy）](/md/kubernetes/network-policy/network-policy)
    - [Service 与 Ingress](/md/kubernetes/service-ingress/service-ingress)
 - Tool
    - [YApi部署](/md/tool/yapi-deploy/yapi-deploy)
