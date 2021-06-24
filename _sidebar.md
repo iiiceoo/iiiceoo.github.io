@@ -13,6 +13,7 @@
    - [数据卷](/md/kubernetes/volume/volume)
    - [RBAC](/md/kubernetes/rbac/rbac)
    - [Kubernetes API](/md/kubernetes/k8s-api/k8s-api)
+   - [容器探针](/md/kubernetes/probe/probe)
    - [单机容器网络](/md/kubernetes/container-network/container-network)
    - [容器跨主网络](/md/kubernetes/flannel/flannel)
    - [CNI](/md/kubernetes/cni/cni)
