@@ -22,3 +22,5 @@
    - [Service 与 Ingress](/md/kubernetes/service-ingress/service-ingress)
 - Tool
    - [YApi部署](/md/tool/yapi-deploy/yapi-deploy)
+- Daily
+   - [工作一年所感](/md/daily/one-year/one-year)
